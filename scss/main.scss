@@ -73,6 +73,36 @@ a {
 	}
 }
 
+.header__logo {
+	padding: 1.5rem 0;
+	text-align: center;
+}
+
+.main-menu__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-menu__nav__list {
+	display: flex;
+	justify-content: center;
+}
+
+.main-menu__nav__item + .main-menu__nav__item {
+	margin-left: 50px;
+}
+
+.main-menu__nav__link {
+	font-size: 0.875rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	transition: all 0.2s;
+	&:hover {
+		color: $accent-blue;
+		border-bottom: 5px solid $accent-blue;
+	}
+}
+
 // In Pictures section
 
 .in-pictures {
