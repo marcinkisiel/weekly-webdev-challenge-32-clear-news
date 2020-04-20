@@ -2,6 +2,81 @@ $accent-blue: #29abe2;
 $dark-grey: #333;
 $light-grey: #f2f2f2;
 
+// Basic styles
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body {
+	font-family: 'Catamaran', sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+// layout
+
+.container {
+	width: 967px;
+	margin: 0 auto;
+	// background-color: lightblue;
+}
+
+.header__sub-menu,
+.footer__sub-menu {
+	background-color: $dark-grey;
+}
+// header
+
+.header__sub-menu {
+	min-height: 50px;
+	padding: 1rem;
+	font-size: 0.75rem;
+	color: #fff;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sub-menu__nav__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sub-menu__nav__item + .sub-menu__nav__item {
+	margin-left: 25px;
+}
+
+.sub-menu__nav__link {
+	color: #fff;
+}
+
+.header__social-media {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__link {
+		margin-left: 10px;
+	}
+}
+
+// In Pictures section
+
+.in-pictures {
 	background-color: $light-grey;
 }
+
+// footer
