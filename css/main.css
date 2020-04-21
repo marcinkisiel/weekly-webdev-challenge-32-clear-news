@@ -31,6 +31,24 @@ a {
   background-color: #333;
 }
 
+.section-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 3.125rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 68px;
+  height: 4px;
+  background-color: #29abe2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 /* header */
 .header__sub-menu {
   min-height: 50px;
@@ -111,7 +129,7 @@ a {
 
 .hero::after {
   content: '';
-  background-image: url(../images/arrow-right-icon.svg);
+  background-image: url(/images/arrow-right-icon.svg);
   width: 41px;
   height: 33px;
   position: absolute;
@@ -141,6 +159,36 @@ a {
   order: -1;
   font-size: 0.875rem;
   font-weight: 100;
+}
+
+/* section Latest Stories */
+.article-intro__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article-intro {
+  flex-basis: 31%;
+  margin-bottom: 40px;
+}
+
+.article-intro__image {
+  width: 100%;
+}
+
+.article-intro__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.35rem;
+  padding: 0.75rem 0;
+}
+
+.article-intro__info {
+  font-size: 0.875rem;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
 }
 
 .in-pictures {
