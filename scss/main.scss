@@ -2,7 +2,7 @@ $accent-blue: #29abe2;
 $dark-grey: #333;
 $light-grey: #f2f2f2;
 
-// Basic styles
+/* Basic styles */
 
 *,
 *::before,
@@ -25,7 +25,7 @@ a {
 	text-decoration: none;
 }
 
-// layout
+/* layout */
 
 .container {
 	width: 967px;
@@ -37,7 +37,8 @@ a {
 .footer__sub-menu {
 	background-color: $dark-grey;
 }
-// header
+
+/* header */
 
 .header__sub-menu {
 	min-height: 50px;
@@ -99,7 +100,42 @@ a {
 	transition: all 0.2s;
 	&:hover {
 		color: $accent-blue;
-		border-bottom: 5px solid $accent-blue;
+		border-bottom: 4px solid $accent-blue;
+	}
+}
+
+/* section Hero */
+
+.hero {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto 6rem;
+	width: 1170px;
+	height: 490px;
+	position: relative;
+
+	&__box {
+		background-color: #fff;
+		width: 600px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 1rem 1rem 2rem 100px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 1.8rem;
+	}
+
+	&__author {
+		order: -1;
+		font-size: 0.875rem;
+		font-weight: 100;
 	}
 }
 
