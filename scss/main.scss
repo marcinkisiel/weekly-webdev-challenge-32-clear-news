@@ -115,6 +115,17 @@ a {
 	height: 490px;
 	position: relative;
 
+	&::after {
+		content: '';
+		background-image: url(../images/arrow-right-icon.svg);
+		width: 41px;
+		height: 33px;
+		position: absolute;
+		right: 70px;
+		top: 50%;
+		z-index: 10;
+	}
+
 	&__box {
 		background-color: #fff;
 		width: 600px;
