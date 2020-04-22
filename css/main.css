@@ -194,3 +194,36 @@ a {
 .in-pictures {
   background-color: #f2f2f2;
 }
+
+.in-pictures__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.in-pictures__box_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+}
+
+.in-pictures__link {
+  flex-basis: 31%;
+  position: relative;
+}
+
+.in-pictures__image {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.in-pictures__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

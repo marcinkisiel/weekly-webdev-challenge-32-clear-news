@@ -199,14 +199,46 @@ a {
 	}
 }
 
-.article-intro + .article-intro {
-	// margin-left: 30px;
-}
-
 // In Pictures section
 
 .in-pictures {
 	background-color: $light-grey;
+
+	&__title {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		text-align: center;
+		padding-top: 2.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	&__box_container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-bottom: 5rem;
+	}
+
+	&__link {
+		flex-basis: 31%;
+		position: relative;
+	}
+
+	&__box {
+	}
+
+	&__image {
+		width: 100%;
+		opacity: 0.5;
+	}
+
+	&__icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
 
 // footer
