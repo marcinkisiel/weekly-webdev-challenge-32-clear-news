@@ -258,3 +258,25 @@ a {
 .health {
   flex-basis: 31%;
 }
+
+/* footer */
+.footer__logo {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__sub-menu {
+  min-height: 50px;
+  padding: 2rem;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+.footer__info__link, .footer__info__copyright {
+  color: #29abe2;
+}
