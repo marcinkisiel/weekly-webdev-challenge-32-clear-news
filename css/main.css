@@ -191,6 +191,7 @@ a {
   justify-content: space-between;
 }
 
+/* section In Pictures */
 .in-pictures {
   background-color: #f2f2f2;
 }
@@ -226,4 +227,34 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* sections Economy & Health */
+.economy-health__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.economy__title,
+.health__title {
+  padding-top: 3rem;
+}
+
+.economy {
+  flex-basis: 65%;
+}
+
+.economy__article-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.economy__article-intro {
+  flex-basis: 47.5%;
+}
+
+.health {
+  flex-basis: 31%;
 }
