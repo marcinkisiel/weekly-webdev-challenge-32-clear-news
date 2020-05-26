@@ -8,8 +8,7 @@
 
 ### opis
 
-**CLEAR news** jest realizacją jednego z wyzwań w ramach grupy FB **_[Weekly WebDev Challenge](https://www.facebook.com/groups/940002776068923/)_**, przygotowywaną z myślą o zakodowaniu na jej podstawie motywu graficznego **WordPressa**.
-Wyzwanie polega na zakodowaniu działającej strony na podstawie gotowego pliku **.PSD**.
+**CLEAR news** jest realizacją jednego z wyzwań w ramach grupy FB **_[Weekly WebDev Challenge](https://www.facebook.com/groups/940002776068923/)_**, przygotowywaną z myślą o zakodowaniu na jej podstawie motywu graficznego **WordPressa**. Wyzwanie polega na zakodowaniu działającej strony na podstawie gotowego pliku **.PSD**.<br/>
 Na ten moment jest gotowa podstawowa struktura strony głównej (jeszcze bez elementów JavaScriptu), ale wymaga ona refaktoryzacji pod kątem zasady **mobile first**. Zdjęcia zaciągane są z serwisu **Unsplash**.
 
 ### stan projektu
