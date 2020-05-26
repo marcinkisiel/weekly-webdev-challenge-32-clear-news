@@ -229,11 +229,21 @@ a {
 .in-pictures__link {
   flex-basis: 31%;
   position: relative;
+  transition: all 0.4s;
+}
+
+.in-pictures__link:hover {
+  transform: scale(1.05);
 }
 
 .in-pictures__image {
   width: 100%;
   opacity: 0.5;
+  transition: all 0.4s;
+}
+
+.in-pictures__image:hover {
+  opacity: 1;
 }
 
 .in-pictures__icon {

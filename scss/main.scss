@@ -1,7 +1,6 @@
 $accent-blue: #29abe2;
 $dark-grey: #333;
 $light-grey: #f2f2f2;
-$middle-grey: #b3b3b3;
 
 /* Basic styles */
 
@@ -240,11 +239,19 @@ a {
 	&__link {
 		flex-basis: 31%;
 		position: relative;
+		transition: all 0.4s;
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 
 	&__image {
 		width: 100%;
 		opacity: 0.5;
+		transition: all 0.4s;
+		&:hover {
+			opacity: 1;
+		}
 	}
 
 	&__icon {
