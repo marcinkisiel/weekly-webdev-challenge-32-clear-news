@@ -1,320 +1,114 @@
 /* Basic styles */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-body {
-  font-family: 'Catamaran', sans-serif;
-}
+body { font-family: 'Catamaran', sans-serif; }
 
-li {
-  list-style: none;
-}
+img { width: 100%; }
 
-a {
-  color: #000;
-  text-decoration: none;
-}
+li { list-style: none; }
 
-/* layout */
-.container {
-  width: 967px;
-  margin: 0 auto;
-}
+a { color: #000; text-decoration: none; }
 
-.header__sub-menu,
-.footer__sub-menu {
-  background-color: #333;
-}
+.container { padding: 0 1rem; }
 
-.section-title {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 3.125rem;
-  position: relative;
-}
+.header__sub-menu, .footer__sub-menu { background-color: #333; }
 
-.section-title::after {
-  content: '';
-  width: 68px;
-  height: 4px;
-  background-color: #29abe2;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
+.header__sub-menu { display: none; }
 
-/* header */
-.header__sub-menu {
-  min-height: 50px;
-  padding: 1rem;
-  font-size: 0.75rem;
-  color: #fff;
-}
+.header__main-menu { display: none; }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-}
+.logo { padding: 1.5rem 0; text-align: center; }
 
-.header__social-media {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__social-media__link {
-  margin-left: 10px;
-}
-
-.header__logo {
-  padding: 1.5rem 0;
-  text-align: center;
-}
-
-.header__main-menu {
-  position: relative;
-}
-
-.sub-menu__nav__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.sub-menu__nav__item + .sub-menu__nav__item {
-  margin-left: 25px;
-}
-
-.sub-menu__nav__link {
-  color: #fff;
-}
-
-.main-menu__container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-menu__container::before {
-  content: '';
-  background-color: #f2f2f2;
-  height: 2px;
-  width: 100%;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-}
-
-.main-menu__nav__list {
-  display: flex;
-  justify-content: center;
-}
-
-.main-menu__nav__item + .main-menu__nav__item {
-  margin-left: 50px;
-}
-
-.main-menu__nav__link {
-  font-size: 0.875rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  transition: all 0.2s;
-}
-
-.main-menu__nav__link:hover {
-  color: #29abe2;
-  border-bottom: 4px solid #29abe2;
-}
+.logo__image { width: auto; }
 
 /* section Hero */
-.hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto 6rem;
-  width: 1170px;
-  height: 490px;
-  position: relative;
-}
+.hero { background-repeat: no-repeat; background-size: contain; background-position: center; margin-bottom: 1rem; width: 100%; height: 460px; position: relative; }
 
-.hero::after {
-  content: '';
-  background-image: url(/images/arrow-right-icon.svg);
-  width: 41px;
-  height: 33px;
-  position: absolute;
-  right: 70px;
-  top: 50%;
-  z-index: 10;
-}
+.hero::after { content: ''; background-image: url(/images/arrow-right-icon.svg); background-repeat: no-repeat; background-size: contain; background-position: center; width: 30px; height: 20px; position: absolute; right: 7%; top: 50%; z-index: 10; }
 
-.hero__box {
-  background-color: #fff;
-  width: 600px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 1rem 1rem 2rem 100px;
-  display: flex;
-  flex-direction: column;
-}
+.hero__box { background-color: #fff; width: 100%; padding: 0 25px; }
 
-.hero__title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.8rem;
-}
+.hero__title { font-size: 1.5rem; font-weight: 700; line-height: 1.8rem; }
 
-.hero__author {
-  order: -1;
-  font-size: 0.875rem;
-  font-weight: 100;
-}
+.hero__author { order: -1; font-size: 0.875rem; font-weight: 100; }
 
-/* section Latest Stories */
-.article-intro__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+.main { margin-top: -130px; }
 
-.article-intro {
-  flex-basis: 31%;
-  margin-bottom: 40px;
-}
+.section-title { font-size: 1.5rem; text-transform: uppercase; font-weight: 700; margin-bottom: 1.5rem; position: relative; }
 
-.article-intro__image {
-  width: 100%;
-}
+.section-title::after { content: ''; width: 68px; height: 4px; background-color: #29abe2; position: absolute; bottom: 0; left: 0; }
 
-.article-intro__title {
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 1.35rem;
-  padding: 0.75rem 0;
-}
+.article-intro { flex-basis: 31%; margin-bottom: 40px; }
 
-.article-intro__info {
-  font-size: 0.875rem;
-  font-weight: 100;
-  display: flex;
-  justify-content: space-between;
-}
+.article-intro__title { font-size: 1.125rem; font-weight: 700; line-height: 1.35rem; padding: 0.75rem 0; }
 
-/* section In Pictures */
-.in-pictures {
-  background-color: #f2f2f2;
-}
+.article-intro__info { font-size: 0.875rem; font-weight: 100; display: flex; justify-content: space-between; }
 
-.in-pictures__title {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
+.in-pictures { background-color: #f2f2f2; padding-bottom: 1rem; }
 
-.in-pictures__box_container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 5rem;
-}
+.in-pictures__title { font-size: 1.5rem; text-transform: uppercase; font-weight: 700; text-align: center; padding-top: 1.5rem; margin-bottom: 1.5rem; }
 
-.in-pictures__link {
-  flex-basis: 31%;
-  position: relative;
-  transition: all 0.4s;
-}
+.in-pictures__box { margin-bottom: 1rem; }
 
-.in-pictures__link:hover {
-  transform: scale(1.05);
-}
+.in-pictures__icon { display: none; }
 
-.in-pictures__image {
-  width: 100%;
-  opacity: 0.5;
-  transition: all 0.4s;
-}
+.economy__title, .health__title { padding-top: 1.5rem; }
 
-.in-pictures__image:hover {
-  opacity: 1;
-}
+.footer__sub-menu { min-height: 50px; padding: 2rem 0; font-size: 0.75rem; color: #fff; }
 
-.in-pictures__icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+.footer__info { margin-top: 1rem; }
 
-/* sections Economy & Health */
-.economy-health__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+.footer__info__link, .footer__info__copyright { color: #29abe2; }
 
-.economy__title,
-.health__title {
-  padding-top: 3rem;
-}
+.sub-menu__nav__link { color: #fff; }
 
-.economy {
-  flex-basis: 65%;
-}
-
-.economy__article-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.economy__article-intro {
-  flex-basis: 47.5%;
-}
-
-.health {
-  flex-basis: 31%;
-}
-
-/* footer */
-.footer {
-  position: relative;
-}
-
-.footer__logo {
-  padding: 1.5rem 0;
-  text-align: center;
-}
-
-.footer__logo::before {
-  content: '';
-  background-color: #f2f2f2;
-  height: 2px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer__sub-menu {
-  min-height: 50px;
-  padding: 2rem;
-  font-size: 0.75rem;
-  color: #fff;
-}
-
-.footer__info__link, .footer__info__copyright {
-  color: #29abe2;
-}
+@media (min-width: 770px) { /* layout */
+  .container { width: 967px; margin: 0 auto; }
+  /* header */
+  .header__sub-menu { display: block; min-height: 50px; padding: 1rem; font-size: 0.75rem; color: #fff; }
+  .header__container { display: flex; justify-content: space-between; }
+  .header__social-media { display: flex; justify-content: space-between; align-items: center; }
+  .header__social-media__link { margin-left: 10px; }
+  .header__main-menu { display: block; position: relative; }
+  .sub-menu__nav__list { display: flex; justify-content: space-between; }
+  .sub-menu__nav__item + .sub-menu__nav__item { margin-left: 25px; }
+  .sub-menu__nav__link { color: #fff; }
+  .main-menu__container { display: flex; justify-content: space-between; }
+  .main-menu__container::before { content: ''; background-color: #f2f2f2; height: 2px; width: 100%; position: absolute; bottom: -2px; left: 0; }
+  .main-menu__nav__list { display: flex; justify-content: center; }
+  .main-menu__nav__item + .main-menu__nav__item { margin-left: 50px; }
+  .main-menu__nav__link { font-size: 0.875rem; font-weight: 400; text-transform: uppercase; transition: all 0.2s; }
+  .main-menu__nav__link:hover { color: #29abe2; border-bottom: 4px solid #29abe2; }
+  /* section Hero */
+  .hero { background-repeat: no-repeat; background-size: cover; background-position: center; margin: 0 auto 6rem; width: 1170px; height: 490px; position: relative; }
+  .hero::after { content: ''; background-image: url(/images/arrow-right-icon.svg); width: 41px; height: 33px; position: absolute; right: 70px; top: 50%; z-index: 10; }
+  .hero__box { background-color: #fff; width: 600px; position: absolute; bottom: 0; left: 0; padding: 1rem 1rem 2rem 100px; display: flex; flex-direction: column; }
+  .hero__title { font-size: 1.5rem; font-weight: 700; line-height: 1.8rem; }
+  .hero__author { order: -1; font-size: 0.875rem; font-weight: 100; }
+  /* section Latest Stories */
+  .main { margin-top: 0; }
+  .section-title { margin-bottom: 3.125rem; }
+  .article-intro__container { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  /* section In Pictures */
+  .in-pictures__title { padding-top: 2.5rem; margin-bottom: 2.5rem; }
+  .in-pictures__box_container { display: flex; flex-wrap: wrap; justify-content: space-between; padding-bottom: 5rem; }
+  .in-pictures__link { flex-basis: 31%; position: relative; transition: all 0.4s; }
+  .in-pictures__link:hover { transform: scale(1.05); }
+  .in-pictures__box { margin-bottom: 0; }
+  .in-pictures__image { width: 100%; opacity: 0.5; transition: all 0.4s; }
+  .in-pictures__image:hover { opacity: 1; }
+  .in-pictures__icon { display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: auto; }
+  /* sections Economy & Health */
+  .economy-health__container { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  .economy__title, .health__title { padding-top: 3rem; }
+  .economy { flex-basis: 65%; }
+  .economy__article-container { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  .economy__article-intro { flex-basis: 47.5%; }
+  .health { flex-basis: 31%; }
+  /* footer */
+  .footer { position: relative; }
+  .footer__logo { padding: 1.5rem 0; text-align: center; }
+  .footer__logo::before { content: ''; background-color: #f2f2f2; height: 2px; width: 100%; position: absolute; top: 0; left: 0; }
+  .footer__container { display: flex; justify-content: space-between; }
+  .footer__sub-menu { min-height: 50px; padding: 2rem; font-size: 0.75rem; color: #fff; }
+  .footer__info { margin-top: 0; } }
