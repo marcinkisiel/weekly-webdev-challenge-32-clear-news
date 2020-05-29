@@ -60,25 +60,25 @@ a { color: #000; text-decoration: none; }
 
 .footer__info__link, .footer__info__copyright { color: #29abe2; }
 
-.sub-menu__nav__link { color: #fff; }
+.sub-menu__link { color: #fff; }
 
 @media (min-width: 770px) { /* layout */
   .container { width: 967px; margin: 0 auto; }
   /* header */
   .header__sub-menu { display: block; min-height: 50px; padding: 1rem; font-size: 0.75rem; color: #fff; }
   .header__container { display: flex; justify-content: space-between; }
-  .header__social-media { display: flex; justify-content: space-between; align-items: center; }
-  .header__social-media__link { margin-left: 10px; }
   .header__main-menu { display: block; position: relative; }
-  .sub-menu__nav__list { display: flex; justify-content: space-between; }
-  .sub-menu__nav__item + .sub-menu__nav__item { margin-left: 25px; }
-  .sub-menu__nav__link { color: #fff; }
-  .main-menu__container { display: flex; justify-content: space-between; }
-  .main-menu__container::before { content: ''; background-color: #f2f2f2; height: 2px; width: 100%; position: absolute; bottom: -2px; left: 0; }
-  .main-menu__nav__list { display: flex; justify-content: center; }
-  .main-menu__nav__item + .main-menu__nav__item { margin-left: 50px; }
-  .main-menu__nav__link { font-size: 0.875rem; font-weight: 400; text-transform: uppercase; transition: all 0.2s; }
-  .main-menu__nav__link:hover { color: #29abe2; border-bottom: 4px solid #29abe2; }
+  .sub-menu__list { display: flex; justify-content: space-between; }
+  .sub-menu__item + .sub-menu__item { margin-left: 25px; }
+  .sub-menu__link { color: #fff; }
+  .social-media { display: flex; justify-content: space-between; align-items: center; }
+  .social-media__link { margin-left: 10px; }
+  .sub-menu, .main-menu { display: flex; justify-content: space-between; }
+  .sub-menu::before, .main-menu::before { content: ''; background-color: #f2f2f2; height: 2px; width: 100%; position: absolute; bottom: -2px; left: 0; }
+  .main-menu__list { display: flex; justify-content: center; }
+  .main-menu__item + .main-menu__item { margin-left: 50px; }
+  .main-menu__link { font-size: 0.875rem; font-weight: 400; text-transform: uppercase; transition: all 0.2s; }
+  .main-menu__link:hover { color: #29abe2; border-bottom: 4px solid #29abe2; }
   /* section Hero */
   .hero { background-repeat: no-repeat; background-size: cover; background-position: center; margin: 0 auto 6rem; width: 1170px; height: 490px; position: relative; }
   .hero::after { content: ''; background-image: url(/images/arrow-right-icon.svg); width: 41px; height: 33px; position: absolute; right: 70px; top: 50%; z-index: 10; }

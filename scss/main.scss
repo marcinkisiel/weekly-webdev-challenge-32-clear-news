@@ -191,7 +191,7 @@ a {
 	}
 }
 
-.sub-menu__nav__link {
+.sub-menu__link {
 	color: #fff;
 }
 
@@ -220,35 +220,38 @@ a {
 			justify-content: space-between;
 		}
 
-		&__social-media {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			&__link {
-				margin-left: 10px;
-			}
-		}
-
 		&__main-menu {
 			display: block;
 			position: relative;
 		}
 	}
 
-	.sub-menu__nav__list {
+	.sub-menu {
+		&__list {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__item + &__item {
+			margin-left: 25px;
+		}
+
+		&__link {
+			color: #fff;
+		}
+	}
+
+	.social-media {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+		&__link {
+			margin-left: 10px;
+		}
 	}
 
-	.sub-menu__nav__item + .sub-menu__nav__item {
-		margin-left: 25px;
-	}
-
-	.sub-menu__nav__link {
-		color: #fff;
-	}
-
-	.main-menu__container {
+	.sub-menu,
+	.main-menu {
 		display: flex;
 		justify-content: space-between;
 
@@ -263,23 +266,25 @@ a {
 		}
 	}
 
-	.main-menu__nav__list {
-		display: flex;
-		justify-content: center;
-	}
+	.main-menu {
+		&__list {
+			display: flex;
+			justify-content: center;
+		}
 
-	.main-menu__nav__item + .main-menu__nav__item {
-		margin-left: 50px;
-	}
+		&__item + &__item {
+			margin-left: 50px;
+		}
 
-	.main-menu__nav__link {
-		font-size: 0.875rem;
-		font-weight: 400;
-		text-transform: uppercase;
-		transition: all 0.2s;
-		&:hover {
-			color: $accent-blue;
-			border-bottom: 4px solid $accent-blue;
+		&__link {
+			font-size: 0.875rem;
+			font-weight: 400;
+			text-transform: uppercase;
+			transition: all 0.2s;
+			&:hover {
+				color: $accent-blue;
+				border-bottom: 4px solid $accent-blue;
+			}
 		}
 	}
 
