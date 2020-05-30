@@ -182,8 +182,13 @@ a {
 	}
 }
 
-.sub-menu__link {
-	color: #fff;
+.sub-menu {
+	&__link {
+		color: #fff;
+		&:hover {
+			color: $accent-blue;
+		}
+	}
 }
 
 .footer-info {

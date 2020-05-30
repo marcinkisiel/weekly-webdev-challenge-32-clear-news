@@ -57,6 +57,8 @@ a { color: #000; text-decoration: none; }
 
 .sub-menu__link { color: #fff; }
 
+.sub-menu__link:hover { color: #29abe2; }
+
 .footer-info { margin-top: 1rem; }
 
 .footer-info__link, .footer-info__copyright { color: #29abe2; }
