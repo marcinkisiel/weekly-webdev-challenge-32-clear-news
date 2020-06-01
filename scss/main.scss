@@ -182,7 +182,8 @@ a {
 	}
 }
 
-.sub-menu {
+.sub-menu,
+.social-media {
 	&__link {
 		color: #fff;
 		&:hover {
@@ -250,8 +251,13 @@ a {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
 		&__link {
 			margin-left: 10px;
+		}
+
+		&__icon {
+			font-size: 15px;
 		}
 	}
 
