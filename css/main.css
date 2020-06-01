@@ -118,7 +118,7 @@ a { color: #000; text-decoration: none; }
 
 @media (min-width: 1024px) { .container { margin: 0 auto; width: 967px; }
   .main-menu__item + .main-menu__item { margin-left: 50px; }
-  .hero { background-size: cover; width: 1170px; height: 490px; }
+  .hero { background-size: cover; max-width: 1170px; height: 490px; }
   .footer__container { flex-direction: row; }
   .sub-menu { margin-bottom: 0; }
   .sub-menu__list { justify-content: space-between; }
