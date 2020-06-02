@@ -25,7 +25,7 @@ HTML, CSS, JavaScript
 
 ### użyte narzędzia
 
-Sass (SCSS)
+Sass (SCSS), Gulp
 
 ### projekt graficzny
 

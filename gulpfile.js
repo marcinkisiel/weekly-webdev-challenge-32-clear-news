@@ -3,21 +3,13 @@ const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 
-// compile SCSS to CSS
 function style() {
-	// 1. SCSS root folder
-	return (
-		gulp
-			.src('./scss/**/*.scss')
-			// 2. compiling
-			.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-			// concat
-			.pipe(concat('main.css'))
-			// 3. CSS destination folder
-			.pipe(gulp.dest('./css/'))
-			// 4. stream changes to all browser
-			.pipe(browserSync.stream())
-	);
+	return gulp
+		.src('./scss/**/*.scss')
+		.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+		.pipe(concat('main.css'))
+		.pipe(gulp.dest('./css/'))
+		.pipe(browserSync.stream());
 }
 
 function watch() {
@@ -35,3 +27,4 @@ function watch() {
 
 exports.style = style;
 exports.watch = watch;
+exports.default = watch;

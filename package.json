@@ -2,12 +2,17 @@
 	"name": "weekly-webdev-challenge-32-clear-news",
 	"version": "1.0.0",
 	"description": "",
+	"homepage": "https://github.com/marcinkisiel/weekly-webdev-challenge-32-clear-news#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/marcinkisiel/weekly-webdev-challenge-32-clear-news.git"
+	},
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Marcin Kisiel",
 	"license": "ISC",
 	"devDependencies": {
 		"browser-sync": "^2.26.7",
