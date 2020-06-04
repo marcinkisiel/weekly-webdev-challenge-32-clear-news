@@ -6,28 +6,28 @@
 
 [CLEAR news Live Demo](https://marcinkisiel.github.io/weekly-webdev-challenge-32-clear-news/)
 
-### opis
+### description
 
-**CLEAR news** jest realizacją jednego z wyzwań w ramach grupy FB **_[Weekly WebDev Challenge](https://www.facebook.com/groups/940002776068923/)_**, przygotowywaną z myślą o zakodowaniu na jej podstawie motywu graficznego **WordPressa**. Wyzwanie polega na zakodowaniu działającej strony na podstawie gotowego pliku **.PSD**.<br/>
-Na ten moment jest gotowa podstawowa struktura strony głównej (jeszcze bez elementów JavaScriptu), ale wymaga ona jeszcze refaktoryzacji pod kątem zasady **mobile first**, ponieważ rozpocząłem od przygotowania widoku desktopowego. Zdjęcia zaciągane są z serwisu **Lorem Picsum**.
+**CLEAR news** is the implementation of one of the challenges within the FB group **_[Weekly WebDev Challenge](https://www.facebook.com/groups/940002776068923/)_**, prepared with the intention of coding **WordPress** theme on its basis. The challenge is to code a working page based on a **.PSD**<br/> file.
+At the moment, the basic structure of the home page is ready (still without any JavaScript elements), but it still requires refactoring in terms of the **mobile first**, because I started with preparing the desktop view. Photos are taken from the **Lorem Picsum** site.
 
-### stan projektu
+### current status
 
-nieukończony
+unfinished
 
-### czas realizacji projektu
+### implementation time
 
-kwiecień 2020 - nadal
+April 2020 - till now
 
-### technologie
+### technologies
 
 HTML, CSS, JavaScript
 
-### użyte narzędzia
+### tools used
 
 Sass (SCSS), Gulp
 
-### projekt graficzny
+### design
 
 Diego Valencia
 <br/>
@@ -35,7 +35,7 @@ Diego Valencia
 ![CLEAR news single post design screen](design/32-single-post.jpg)
 ![CLEAR news category design screen](design/32-category.jpg)
 
-### kontakt
+### contact
 
 **Marcin Kisiel**:
 <br/>
