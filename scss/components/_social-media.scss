@@ -1,0 +1,24 @@
+.social-media {
+	&__link {
+		color: #fff;
+		&:hover {
+			color: $accent-blue;
+		}
+	}
+}
+
+@media (min-width: 765px) {
+	.social-media {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__link {
+			margin-left: 10px;
+		}
+
+		&__icon {
+			font-size: 15px;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Catamaran', sans-serif;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+.main {
+	margin-top: -130px;
+}
+
+@media (min-width: 765px) {
+	.main {
+		margin-top: 0;
+	}
+}

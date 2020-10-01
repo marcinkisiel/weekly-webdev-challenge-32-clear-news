@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header__sub-menu,
+.footer__sub-menu {
+	background-color: $dark-grey;
+}
+
+.header {
+	&__sub-menu {
+		display: none;
+	}
+
+	&__main-menu {
+		display: none;
+	}
+}
+
+@media (min-width: 765px) {
+	.header {
+		&__sub-menu {
+			display: block;
+			min-height: 50px;
+			padding: 1rem;
+			font-size: 0.75rem;
+			color: #fff;
+		}
+
+		&__container {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__main-menu {
+			display: block;
+			position: relative;
+		}
+	}
+}

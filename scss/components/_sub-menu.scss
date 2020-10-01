@@ -1,0 +1,34 @@
+.sub-menu {
+	&__link {
+		color: #fff;
+		&:hover {
+			color: $accent-blue;
+		}
+	}
+}
+
+@media (min-width: 765px) {
+	.sub-menu {
+		&__list {
+			display: flex;
+		}
+
+		&__item + &__item {
+			margin-left: 25px;
+		}
+
+		&__link {
+			color: #fff;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.sub-menu {
+		margin-bottom: 0;
+
+		&__list {
+			justify-content: space-between;
+		}
+	}
+}

@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+@media (min-width: 765px) {
+	.economy-health__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.economy {
+		flex-basis: 65%;
+
+		&__article-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		&__article-intro {
+			flex-basis: 47.5%;
+		}
+	}
+
+	.health {
+		flex-basis: 31%;
+	}
+}

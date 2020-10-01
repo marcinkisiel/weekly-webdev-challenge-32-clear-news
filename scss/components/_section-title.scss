@@ -1,0 +1,33 @@
+.section-title {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+	position: relative;
+
+	&::after {
+		content: '';
+		width: 68px;
+		height: 4px;
+		background-color: $accent-blue;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.economy__title,
+.health__title {
+	padding-top: 1.5rem;
+}
+
+@media (min-width: 765px) {
+	.section-title {
+		margin-bottom: 3.125rem;
+	}
+
+	.economy__title,
+	.health__title {
+		padding-top: 3rem;
+	}
+}
