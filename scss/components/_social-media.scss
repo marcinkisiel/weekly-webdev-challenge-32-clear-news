@@ -1,5 +1,5 @@
 .social-media {
-	@media (min-width: 765px) {
+	@media (min-width: $md) {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -8,16 +8,16 @@
 	&__link {
 		color: #fff;
 		&:hover {
-			color: $accent-blue;
+			color: $accent;
 		}
 
-		@media (min-width: 765px) {
+		@media (min-width: $md) {
 			margin-left: 10px;
 		}
 	}
 
 	&__icon {
-		@media (min-width: 765px) {
+		@media (min-width: $md) {
 			font-size: 15px;
 		}
 	}

@@ -4,24 +4,24 @@
 
 .header__sub-menu,
 .footer__sub-menu {
-	background-color: $dark-grey;
+	background-color: $primary-dark;
 }
 
 .header {
 	&__sub-menu {
 		display: none;
 
-		@media (min-width: 765px) {
+		@media (min-width: $md) {
 			display: block;
 			min-height: 50px;
-			padding: 1rem;
+			padding: 1rem 0;
 			font-size: 0.75rem;
 			color: #fff;
 		}
 	}
 
 	&__container {
-		@media (min-width: 765px) {
+		@media (min-width: $md) {
 			display: flex;
 			justify-content: space-between;
 		}
@@ -30,7 +30,7 @@
 	&__main-menu {
 		display: none;
 
-		@media (min-width: 765px) {
+		@media (min-width: $md) {
 			display: block;
 			position: relative;
 		}

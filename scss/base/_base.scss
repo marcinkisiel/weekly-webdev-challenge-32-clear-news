@@ -15,8 +15,8 @@ body {
 }
 
 a {
-	color: #000;
 	text-decoration: none;
+	color: #000;
 }
 
 li {
@@ -30,7 +30,7 @@ img {
 .main {
 	margin-top: -130px;
 
-	@media (min-width: 765px) {
+	@media (min-width: $md) {
 		margin-top: 0;
 	}
 }

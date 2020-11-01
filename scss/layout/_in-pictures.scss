@@ -1,25 +1,25 @@
 // section In Pictures
 
 .in-pictures {
-	background-color: $light-grey;
 	padding-bottom: 1rem;
+	background-color: $primary-light;
 
 	&__title {
+		margin-bottom: 1.5rem;
+		padding-top: 1.5rem;
 		font-size: 1.5rem;
-		text-transform: uppercase;
 		font-weight: 700;
 		text-align: center;
-		padding-top: 1.5rem;
-		margin-bottom: 1.5rem;
+		text-transform: uppercase;
 
-		@media (min-width: 765px) {
-			padding-top: 2.5rem;
+		@media (min-width: $md) {
 			margin-bottom: 2.5rem;
+			padding-top: 2.5rem;
 		}
 	}
 
 	&__box_container {
-		@media (min-width: 765px) {
+		@media (min-width: $md) {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
@@ -28,9 +28,9 @@
 	}
 
 	&__link {
-		@media (min-width: 765px) {
-			flex-basis: 31%;
+		@media (min-width: $md) {
 			position: relative;
+			flex-basis: 31%;
 			transition: all 0.4s;
 			&:hover {
 				transform: scale(1.05);
@@ -41,13 +41,13 @@
 	&__box {
 		margin-bottom: 1rem;
 
-		@media (min-width: 765px) {
+		@media (min-width: $md) {
 			margin-bottom: 0;
 		}
 	}
 
 	&__image {
-		@media (min-width: 765px) {
+		@media (min-width: $md) {
 			width: 100%;
 			opacity: 0.5;
 			transition: all 0.4s;
@@ -60,13 +60,13 @@
 	&__icon {
 		display: none;
 
-		@media (min-width: 765px) {
+		@media (min-width: $md) {
 			display: block;
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			transform: translate(-50%, -50%);
 			width: auto;
+			transform: translate(-50%, -50%);
 		}
 	}
 }

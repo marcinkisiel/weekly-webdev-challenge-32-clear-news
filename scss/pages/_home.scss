@@ -2,7 +2,7 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-@media (min-width: 765px) {
+@media (min-width: $md) {
 	.economy-health__container {
 		display: flex;
 		flex-wrap: wrap;
