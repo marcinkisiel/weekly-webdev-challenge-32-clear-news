@@ -1,5 +1,5 @@
-@media (min-width: 765px) {
-	.main-menu {
+.main-menu {
+	@media (min-width: 765px) {
 		display: flex;
 		justify-content: space-between;
 
@@ -12,12 +12,11 @@
 			bottom: -2px;
 			left: 0;
 		}
-	}
 
-	.main-menu {
 		&__nav {
 			width: 100%;
 		}
+
 		&__list {
 			display: flex;
 			justify-content: center;
@@ -38,10 +37,8 @@
 			}
 		}
 	}
-}
 
-@media (min-width: 1024px) {
-	.main-menu {
+	@media (min-width: 1024px) {
 		&__item + &__item {
 			margin-left: 50px;
 		}

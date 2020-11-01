@@ -14,20 +14,17 @@
 		bottom: 0;
 		left: 0;
 	}
+
+	@media (min-width: 765px) {
+		margin-bottom: 3.125rem;
+	}
 }
 
 .economy__title,
 .health__title {
 	padding-top: 1.5rem;
-}
 
-@media (min-width: 765px) {
-	.section-title {
-		margin-bottom: 3.125rem;
-	}
-
-	.economy__title,
-	.health__title {
+	@media (min-width: 765px) {
 		padding-top: 3rem;
 	}
 }

@@ -9,19 +9,8 @@
 		font-size: 0.75rem;
 		color: #fff;
 	}
-}
 
-.footer-info {
-	margin-top: 1rem;
-
-	&__link,
-	&__copyright {
-		color: $accent-blue;
-	}
-}
-
-@media (min-width: 765px) {
-	.footer {
+	@media (min-width: 765px) {
 		position: relative;
 
 		&__logo {
@@ -51,19 +40,22 @@
 		}
 	}
 
-	.footer-info {
-		margin-top: 15px;
-	}
-}
-
-@media (min-width: 1024px) {
-	.footer {
+	@media (min-width: 1024px) {
 		&__container {
 			flex-direction: row;
 		}
 	}
+}
 
-	.footer-info {
+.footer-info {
+	margin-top: 1rem;
+
+	&__link,
+	&__copyright {
+		color: $accent-blue;
+	}
+
+	@media (min-width: 1024px) {
 		margin-top: 0;
 	}
 }

@@ -1,23 +1,23 @@
 .social-media {
+	@media (min-width: 765px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	&__link {
 		color: #fff;
 		&:hover {
 			color: $accent-blue;
 		}
-	}
-}
 
-@media (min-width: 765px) {
-	.social-media {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-
-		&__link {
+		@media (min-width: 765px) {
 			margin-left: 10px;
 		}
+	}
 
-		&__icon {
+	&__icon {
+		@media (min-width: 765px) {
 			font-size: 15px;
 		}
 	}
