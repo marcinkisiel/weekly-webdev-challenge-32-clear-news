@@ -34,3 +34,11 @@ img {
 		margin-top: 0;
 	}
 }
+
+.article-grid {
+	@media (min-width: $md) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}

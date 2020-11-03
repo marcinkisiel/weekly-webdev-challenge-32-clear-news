@@ -13,6 +13,16 @@
 	@media (min-width: $md) {
 		position: relative;
 
+		&__container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			@media (min-width: $lg) {
+				flex-direction: row;
+			}
+		}
+
 		&__logo {
 			padding: 1.5rem 0;
 			text-align: center;
@@ -27,22 +37,10 @@
 			}
 		}
 
-		&__container {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-
 		&__sub-menu {
 			min-height: 50px;
 			font-size: 0.75rem;
 			color: #fff;
-		}
-	}
-
-	@media (min-width: $lg) {
-		&__container {
-			flex-direction: row;
 		}
 	}
 }
@@ -50,8 +48,8 @@
 .footer-info {
 	margin-top: 1rem;
 
-	&__link,
-	&__copyright {
+	&__copyright,
+	&__link {
 		color: $accent;
 	}
 

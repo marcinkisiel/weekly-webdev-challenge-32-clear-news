@@ -18,13 +18,13 @@
 	@media (min-width: $md) {
 		margin-bottom: 3.125rem;
 	}
-}
 
-.economy__title,
-.health__title {
-	padding-top: 1.5rem;
+	&--economy,
+	&--health {
+		padding-top: 1.5rem;
 
-	@media (min-width: $md) {
-		padding-top: 3rem;
+		@media (min-width: $md) {
+			padding-top: 3rem;
+		}
 	}
 }

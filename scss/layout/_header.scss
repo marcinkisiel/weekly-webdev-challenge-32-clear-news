@@ -2,13 +2,13 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-.header__sub-menu,
+.header__top-bar,
 .footer__sub-menu {
 	background-color: $primary-dark;
 }
 
 .header {
-	&__sub-menu {
+	&__top-bar {
 		display: none;
 
 		@media (min-width: $md) {
