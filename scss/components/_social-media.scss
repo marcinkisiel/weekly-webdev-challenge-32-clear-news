@@ -1,8 +1,15 @@
 .social-media {
-	@media (min-width: $md) {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&--footer {
+		width: 30%;
+		margin-top: 1rem;
+
+		@media (min-width: $md) {
+			display: none;
+		}
 	}
 
 	&__link {

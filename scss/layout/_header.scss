@@ -21,10 +21,8 @@
 	}
 
 	&__container {
-		@media (min-width: $md) {
-			display: flex;
-			justify-content: space-between;
-		}
+		display: flex;
+		justify-content: space-between;
 	}
 
 	&__main-menu {
