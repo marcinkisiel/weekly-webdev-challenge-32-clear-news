@@ -29,6 +29,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		@media (min-width: $md) {
+			display: block;
+		}
 	}
 
 	&__toggle-menu {
