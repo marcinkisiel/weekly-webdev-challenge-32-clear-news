@@ -6,7 +6,11 @@
 		<link rel="icon" type="image/png" href="images/clear-news-favicon.png" />
 		<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 		<link rel="stylesheet" href="css/main.css" />
+		<script src="https://unpkg.com/swiper/swiper-bundle.js" defer></script>
+		<script src="assets/scripts/swiper.js" defer></script>
+		<script src="assets/scripts/main.js" defer></script>
 		<title>CLEAR news</title>
 	</head>
 	<body>
@@ -30,9 +34,15 @@
 					</div>
 				</div>
 			</div>
-			<div class="header__logo logo container">
-				<a class="logo__link" href="#"><img class="logo__image" src="images/logo.png" alt="" /></a>
+			<div class="header__mobile-bar container">
+				<div class="header__logo logo">
+					<a class="logo__link" href="#"><img class="logo__image" src="images/logo.png" alt="" /></a>
+				</div>
+				<div class="header__toggle-menu">
+					<i class="fas fa-bars"></i>
+				</div>
 			</div>
+
 			<div class="header__main-menu">
 				<div class="main-menu container">
 					<nav class="main-menu__nav">
@@ -54,11 +64,36 @@
 			</div>
 		</header>
 
-		<section class="hero" style="background-image: url(./images/hero.jpg)">
-			<div class="hero__box">
-				<h1 class="hero__title">Ladies others the six desire age. Bred am soon park past read by lain. As excuse eldest no moment.</h1>
-				<p class="hero__author">By Clark Kent</p>
+		<section class="hero swiper-container">
+			<div class="hero__wrapper swiper-wrapper">
+				<div class="hero__slide swiper-slide" style="background-image: url(https://picsum.photos/1200/500?random=1)">
+					<div class="hero__box">
+						<h1 class="hero__title">
+							Ladies others the six desire age. Bred am soon park past read by lain. As excuse eldest no moment.
+						</h1>
+						<p class="hero__author">By Clark Kent</p>
+					</div>
+				</div>
+
+				<div class="hero__slide swiper-slide" style="background-image: url(https://picsum.photos/1200/500?random=2)">
+					<div class="hero__box">
+						<h1 class="hero__title">
+							On projection apartments unsatiable so if he entreaties appearance. Rose you wife how set lady half wish.
+						</h1>
+						<p class="hero__author">By Clark Kent</p>
+					</div>
+				</div>
+
+				<div class="hero__slide swiper-slide" style="background-image: url(https://picsum.photos/1200/500?random=3)">
+					<div class="hero__box">
+						<h1 class="hero__title">Bore boy what fat case left use. Match round scale now sex style far times.</h1>
+						<p class="hero__author">By Clark Kent</p>
+					</div>
+				</div>
 			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
 		</section>
 
 		<main class="main">

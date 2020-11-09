@@ -25,6 +25,18 @@
 		justify-content: space-between;
 	}
 
+	&__mobile-bar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__toggle-menu {
+		@media (min-width: $md) {
+			display: none;
+		}
+	}
+
 	&__main-menu {
 		display: none;
 
