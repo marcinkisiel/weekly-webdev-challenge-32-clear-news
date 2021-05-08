@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .social-media {
 	&__link {
 		color: #fff;
@@ -22,3 +23,36 @@
 		}
 	}
 }
+=======
+.social-media {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&--footer {
+		width: 30%;
+		margin-top: 1rem;
+
+		@media (min-width: $md) {
+			display: none;
+		}
+	}
+
+	&__link {
+		color: #fff;
+		&:hover {
+			color: $accent;
+		}
+
+		@media (min-width: $md) {
+			margin-left: 10px;
+		}
+	}
+
+	&__icon {
+		@media (min-width: $md) {
+			font-size: 15px;
+		}
+	}
+}
+>>>>>>> ef9e4c6911f489d1383efa267c2373015407effa

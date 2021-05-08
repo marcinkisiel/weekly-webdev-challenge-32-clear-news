@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // section In Pictures
 
 .in-pictures {
@@ -68,3 +69,77 @@
 		}
 	}
 }
+=======
+// section In Pictures
+
+.in-pictures {
+	padding-bottom: 1rem;
+	background-color: $primary-light;
+
+	&__title {
+		margin-bottom: 1.5rem;
+		padding-top: 1.5rem;
+		font-size: 1.5rem;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+
+		@media (min-width: $md) {
+			margin-bottom: 2.5rem;
+			padding-top: 2.5rem;
+		}
+	}
+
+	&__box-container {
+		@media (min-width: $md) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding-bottom: 5rem;
+		}
+	}
+
+	&__link {
+		@media (min-width: $md) {
+			position: relative;
+			flex-basis: 31%;
+			transition: all 0.4s;
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	&__box {
+		margin-bottom: 1rem;
+
+		@media (min-width: $md) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__image {
+		@media (min-width: $md) {
+			width: 100%;
+			opacity: 0.5;
+			transition: all 0.4s;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__icon {
+		display: none;
+
+		@media (min-width: $md) {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: auto;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+>>>>>>> ef9e4c6911f489d1383efa267c2373015407effa

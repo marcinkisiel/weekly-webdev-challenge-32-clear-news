@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .section-title {
 	font-size: 1.5rem;
 	text-transform: uppercase;
@@ -31,3 +32,35 @@
 		padding-top: 3rem;
 	}
 }
+=======
+.section-title {
+	position: relative;
+	margin-bottom: 1.5rem;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 68px;
+		height: 4px;
+		background-color: $accent;
+	}
+
+	@media (min-width: $md) {
+		margin-bottom: 3.125rem;
+	}
+
+	&--economy,
+	&--health {
+		padding-top: 1.5rem;
+
+		@media (min-width: $md) {
+			padding-top: 3rem;
+		}
+	}
+}
+>>>>>>> ef9e4c6911f489d1383efa267c2373015407effa

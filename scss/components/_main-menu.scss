@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (min-width: 765px) {
 	.main-menu {
 		display: flex;
@@ -47,3 +48,51 @@
 		}
 	}
 }
+=======
+.main-menu {
+	@media (min-width: $md) {
+		display: flex;
+		justify-content: space-between;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: $primary-light;
+		}
+
+		&__nav {
+			width: 100%;
+		}
+
+		&__list {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__item {
+			flex-grow: 1;
+		}
+
+		&__link {
+			font-size: 0.875rem;
+			font-weight: 400;
+			text-transform: uppercase;
+			transition: all 0.2s;
+			&:hover {
+				color: $accent;
+				border-bottom: 4px solid $accent;
+			}
+		}
+	}
+
+	@media (min-width: $lg) {
+		&__item + &__item {
+			margin-left: 50px;
+		}
+	}
+}
+>>>>>>> ef9e4c6911f489d1383efa267c2373015407effa

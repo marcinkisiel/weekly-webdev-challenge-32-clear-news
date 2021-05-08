@@ -2,37 +2,49 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-.header__sub-menu,
+.header__top-bar,
 .footer__sub-menu {
-	background-color: $dark-grey;
+	background-color: $primary-dark;
 }
 
 .header {
-	&__sub-menu {
+	&__top-bar {
 		display: none;
+
+		@media (min-width: $md) {
+			display: block;
+			min-height: 50px;
+			padding: 1rem 0;
+			font-size: 0.75rem;
+			color: #fff;
+		}
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__mobile-bar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (min-width: $md) {
+			display: block;
+		}
+	}
+
+	&__toggle-menu {
+		@media (min-width: $md) {
+			display: none;
+		}
 	}
 
 	&__main-menu {
 		display: none;
-	}
-}
 
-@media (min-width: 765px) {
-	.header {
-		&__sub-menu {
-			display: block;
-			min-height: 50px;
-			padding: 1rem;
-			font-size: 0.75rem;
-			color: #fff;
-		}
-
-		&__container {
-			display: flex;
-			justify-content: space-between;
-		}
-
-		&__main-menu {
+		@media (min-width: $md) {
 			display: block;
 			position: relative;
 		}

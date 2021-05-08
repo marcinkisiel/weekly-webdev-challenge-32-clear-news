@@ -3,18 +3,14 @@
 // -----------------------------------------------------------------------------
 
 .container {
-	padding: 0 1rem;
-}
+	width: 85%;
+	margin: 0 auto;
 
-@media (min-width: 765px) {
-	.container {
-		padding: 0 2rem;
+	@media (min-width: $md) {
+		width: 90%;
 	}
-}
 
-@media (min-width: 1024px) {
-	.container {
-		margin: 0 auto;
-		width: 967px;
+	@media (min-width: $lg) {
+		max-width: 967px;
 	}
 }
