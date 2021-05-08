@@ -15,7 +15,7 @@
 	"author": "Marcin Kisiel",
 	"license": "ISC",
 	"devDependencies": {
-		"browser-sync": "^2.26.13",
+		"browser-sync": "^2.26.14",
 		"gulp": "^4.0.2",
 		"gulp-concat": "^2.6.1",
 		"gulp-sass": "^4.0.2"
